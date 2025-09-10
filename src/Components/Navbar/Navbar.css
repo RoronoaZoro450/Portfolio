@@ -1,0 +1,129 @@
+.navbar-vertical {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.navbar-vertical .dot {
+  display: flex;
+  margin-bottom: 100px;
+  transition: all 0.3s ease;
+  color: #ffffff;
+}
+
+.navbar-vertical .dot:hover {
+  color: #e34e53;
+  transform: rotate(45deg) scale(1.1);
+  filter: drop-shadow(0 0 8px rgba(227, 78, 83, 0.4));
+}
+
+/* nav list */
+.navbar-vertical ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* nav links */
+.navbar-vertical a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.navbar-vertical a:hover {
+  color: #e34e53;
+  transform: scale(1.1);
+  text-shadow: 
+      0 0 8px rgba(227, 78, 83, 0.6),
+      2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-vertical a:hover::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e34e53;
+  border-radius: 1px;
+  box-shadow: 0 0 6px rgba(227, 78, 83, 0.5);
+}
+
+/* Resume link special styling */
+.navbar-vertical a[href="/resume.pdf"] {
+  color: #ffcccd;
+  font-weight: 600;
+}
+
+.navbar-vertical a[href="/resume.pdf"]:hover {
+  color: #e34e53;
+  text-shadow: 
+      0 0 10px rgba(227, 78, 83, 0.7),
+      2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Red theme when in projects section */
+.navbar-vertical.navbar-red .dot {
+  color: #e34e53;
+  filter: drop-shadow(0 0 8px rgba(227, 78, 83, 0.5));
+}
+
+.navbar-vertical.navbar-red a {
+  color: #e34e53;
+  text-shadow: 
+      0 0 6px rgba(227, 78, 83, 0.4),
+      2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-vertical.navbar-red a:hover {
+  color: #ffffff;
+  text-shadow: 
+      0 0 10px rgba(255, 255, 255, 0.8),
+      2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-vertical.navbar-red a:hover::before {
+  background: #ffffff;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+.navbar-vertical.navbar-red .dot:hover {
+  color: #ffffff;
+  transform: rotate(45deg) scale(1.1);
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.6));
+}
+
+/* Smooth transitions for color changes */
+.navbar-vertical {
+  transition: all 0.4s ease;
+}
+
+.navbar-vertical .dot,
+.navbar-vertical a {
+  transition: all 0.4s ease;
+}
+
+/* Smooth scroll sections */
+section#contact {
+  scroll-margin-top: 80px;
+}
