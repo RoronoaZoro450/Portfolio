@@ -5,24 +5,24 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.',
+      title: 'UrbanThreads',
+      description: 'A full-stack e-commerce solution with React, Node.js, and MongoDB.',
       image: '/api/placeholder/400/250',
       category: 'fullstack',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      demoUrl: '#',
-      githubUrl: '#',
+      technologies: ['React', 'Node.js', 'MongoDB],
+      demoUrl: 'https://urban-thread-ten.vercel.app',
+      githubUrl: 'https://github.com/RoronoaZoro450/UrbanThread',
       featured: true
     },
     {
       id: 2,
-      title: 'Task Management App',
-      description: 'A collaborative task management tool with real-time updates, drag & drop functionality, and team collaboration features.',
+      title: 'BlockThrust',
+      description: 'CryptoPlace is a web app that integrates CoinGecko API to provide real-time cryptocurrency prices and interactive charts for seamless market tracking.',
       image: '/api/placeholder/400/250',
       category: 'frontend',
-      technologies: ['React', 'Redux', 'Socket.io', 'CSS3'],
-      demoUrl: '#',
-      githubUrl: '#',
+      technologies: ['React','Node.js'],
+      demoUrl: 'https://blockthrust.vercel.app',
+      githubUrl: 'https://github.com/RoronoaZoro450/BLOCKTHRUST',
       featured: false
     },
     {
