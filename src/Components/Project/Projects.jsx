@@ -27,25 +27,14 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'Weather Dashboard',
-      description: 'A responsive weather application with location-based forecasts, interactive maps, and detailed weather analytics.',
+      title: 'Law-AI',
+      description: 'Law AI is a platform that simplifies legal documents, detects hidden clauses, and provides AI-powered legal assistance with real-time insights',
       image: '/api/placeholder/400/250',
       category: 'frontend',
       technologies: ['JavaScript', 'API Integration', 'Chart.js', 'CSS3'],
-      demoUrl: '#',
-      githubUrl: '#',
+      demoUrl: 'https://lawai-puce.vercel.app',
+      githubUrl: 'https://github.com/RoronoaZoro450/Law-Ai',
       featured: true
-    },
-    {
-      id: 4,
-      title: 'REST API Server',
-      description: 'A robust RESTful API server with authentication, rate limiting, and comprehensive documentation using Express.js.',
-      image: '/api/placeholder/400/250',
-      category: 'backend',
-      technologies: ['Node.js', 'Express', 'JWT', 'PostgreSQL'],
-      demoUrl: '#',
-      githubUrl: '#',
-      featured: false
     },
   ];
   
